@@ -16,7 +16,7 @@ export const Categories: Category[] = [
     menus: [
       {
         name: '대시보드',
-        icon: 'fa-desktop',
+        icon: 'fa-solid fa-desktop',
         path: '/dashboard'
       }
     ]
@@ -26,7 +26,7 @@ export const Categories: Category[] = [
     menus: [
       {
         name: '크레딧',
-        icon: 'fa-circle-info',
+        icon: 'fa-solid fa-circle-info',
         path: '/credit'
       },
       {

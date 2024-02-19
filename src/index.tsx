@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { routes } from './router';
 
+import './assets/css/bootstrap.css';
 import './assets/css/fontawesome.css';
 import './assets/css/styles.css';
 import './assets/css/common.css';

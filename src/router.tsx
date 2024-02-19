@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
-import DefaultTheme from "./routes/theme/DefaultTheme";
 import Dashboard from "./routes/pages/Dashboard";
 import Credit from "./routes/pages/Credit";
 import NotFound from "./routes/pages/error/NotFound";
+import DashboardTheme from "./routes/theme/dashboard/DashboardTheme";
 
 interface Route {
   uri: string[];
@@ -12,11 +12,11 @@ interface Route {
 export const routes: Route[] = [
   {
     uri: ['/', '/dashboard'],
-    element: <DefaultTheme element={<Dashboard/>}/>
+    element: <DashboardTheme element={<Dashboard/>}/>
   },
   {
     uri: ['/credit'],
-    element: <DefaultTheme element={<Credit/>}/>
+    element: <DashboardTheme element={<Credit/>}/>
   },
   {
     uri: ['*'],
