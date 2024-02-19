@@ -32,7 +32,7 @@ export const Categories: Category[] = [
       {
         name: '@lsm0318',
         icon: 'fa-brands fa-github',
-        path: 'https://github.com/lsm0318',
+        path: 'https://github.com/lsm0318/dashboard-sample',
       }
     ]
   }
