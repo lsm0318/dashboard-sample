@@ -12,25 +12,25 @@ const Dashboard = () => {
   return (
     <>
       <Row className="mb-4 g-3">
-        <Col>
+        <Col md={6} xl={3}>
           <CardCounter title={'TOTAL ENTITIES'} value={115600} changed={131}
                        icon={<i className="fa-solid fa-database fa-fw"></i>}/>
         </Col>
-        <Col>
+        <Col md={6} xl={3}>
           <CardCounter title={'TOTAL RELATIONSHIPS'} value={796300} changed={417}
                        icon={<i className="fa-solid fa-code-fork fa-fw"></i>}/>
         </Col>
-        <Col>
+        <Col md={6} xl={3}>
           <CardCounter title={'TOTAL REPORTS'} value={9200} changed={3}
                        icon={<i className="fa-regular fa-file-lines fa-fw"></i>}/>
         </Col>
-        <Col>
+        <Col md={6} xl={3}>
           <CardCounter title={'TOTAL OBSERVABLES'} value={470750} changed={43}
                        icon={<i className="fa-solid fa-layer-group fa-fw"></i>}/>
         </Col>
       </Row>
       <Row className="mb-4 g-3">
-        <Col sm={4}>
+        <Col md={12} lg={4}>
           <CardLabels title={'TOP LABELS (3 LAST MONTHS)'} data={[
             {name: 'Malware', value: 10880, color: {backgroundColor: '#cc19e0'}},
             {name: 'geopolitical...', value: 5200, color: {backgroundColor: '#6b4ec5'}},
@@ -43,15 +43,15 @@ const Dashboard = () => {
             {name: 'botnet', value: 3000, color: {backgroundColor: '#3d3a3d'}},
           ]}/>
         </Col>
-        <Col sm={8}>
+        <Col md={12} lg={8}>
           <CardChartArea/>
         </Col>
       </Row>
       <Row className="mb-4 g-3">
-        <Col>
+        <Col md={12} lg>
           <CardChartBar/>
         </Col>
-        <Col>
+        <Col md={12} lg>
           <Card>
             <Card.Header><small>TARGETED COUNTRIES (3 LAST MONTHS)</small></Card.Header>
             <Card.Body>
@@ -61,16 +61,21 @@ const Dashboard = () => {
         </Col>
       </Row>
       <Row className="mb-4 g-3">
-        <Col sm={8}>
+        <Col md={12} lg={8}>
           <CardBoard title={'LAST INGESTED ANALYSIS (CREATION DATE IN THE PLATFORM)'} posts={[
             {type: 'Opinion', subject: 'strongly-agree', author: 'admin', date: new Date('2022-03-02')},
             {type: 'Opinion', subject: 'agree', author: 'a a', date: new Date('2022-03-02')},
             {type: 'Opinion', subject: 'neutral', author: 'Shehroz Rashid', date: new Date('2022-03-02')},
-            {type: 'Report', subject: 'Asylum Ambuscade: State Actor Uses Compromised Private Ukrainian Military Emails to Target European Governments and Refugee Movement', author: 'AlienVault', date: new Date('2022-03-02')},
+            {
+              type: 'Report',
+              subject: 'Asylum Ambuscade: State Actor Uses Compromised Private Ukrainian Military Emails to Target European Governments and Refugee Movement',
+              author: 'AlienVault',
+              date: new Date('2022-03-02')
+            },
             {type: 'Opinion', subject: 'agree', author: 'Perimeter Watch', date: new Date('2022-03-02')},
           ]}/>
         </Col>
-        <Col sm={4}>
+        <Col md={12} lg={4}>
           <CardChartRadar/>
         </Col>
       </Row>
