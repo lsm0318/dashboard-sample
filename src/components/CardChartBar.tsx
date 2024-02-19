@@ -29,12 +29,12 @@ const CardChartBar = () => {
   return (
     <Card>
       <Card.Header><small>TOP 10 ACTIVE ENTITIES (3 LAST MONTHS)</small></Card.Header>
-      <Card.Body className="p-1">
+      <Card.Body className="p-1" style={{height: '280px'}}>
         <Chart
           options={data.options}
           series={data.series}
           type="bar"
-          height={250}
+          height={270}
         />
       </Card.Body>
     </Card>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Chart from "react-apexcharts";
 import { Card } from "react-bootstrap";
 
@@ -24,12 +24,12 @@ const CardChartArea = () => {
   return (
     <Card>
       <Card.Header><small>INGESTED ENTITIES</small></Card.Header>
-      <Card.Body className="p-1">
+      <Card.Body className="p-1" style={{height: '280px'}}>
         <Chart
           options={data.options}
           series={data.series}
           type="area"
-          height={250}
+          height={270}
         />
       </Card.Body>
     </Card>

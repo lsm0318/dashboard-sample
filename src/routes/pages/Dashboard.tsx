@@ -54,7 +54,7 @@ const Dashboard = () => {
         <Col md={12} lg>
           <Card>
             <Card.Header><small>TARGETED COUNTRIES (3 LAST MONTHS)</small></Card.Header>
-            <Card.Body>
+            <Card.Body style={{height: '280px'}}>
               <h5>W.I.P</h5>
             </Card.Body>
           </Card>

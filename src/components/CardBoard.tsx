@@ -20,7 +20,7 @@ const CardBoard: React.FunctionComponent<CardBoardProps> = ({
   return (
     <Card>
       <Card.Header><small>{title}</small></Card.Header>
-      <Card.Body>
+      <Card.Body style={{height: '280px'}}>
         <div className="d-flex flex-column gap-3">
           {posts.map((post, i) =>
             <Row key={i}>

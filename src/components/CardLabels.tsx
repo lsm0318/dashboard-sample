@@ -19,8 +19,8 @@ const CardLabels: React.FunctionComponent<CardLabelsProps> = ({
   return (
     <Card>
       <Card.Header><small>{title}</small></Card.Header>
-      <Card.Body className="p-0">
-        <Row className="p-0 m-0 row-cols-3">
+      <Card.Body className="p-0" style={{height: '280px'}}>
+        <Row className="p-0 m-0 row-cols-3 h-100">
           {data.map((label, i) =>
             <Col key={i} className="p-3" style={label.color}>
               <span className="fs-5">{convertToK(label.value)}</span>

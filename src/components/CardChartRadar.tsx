@@ -34,7 +34,7 @@ const CardChartRadar = () => {
   return (
     <Card>
       <Card.Header><small>OBSERVABLES DISTRIBUTION</small></Card.Header>
-      <Card.Body className="p-1">
+      <Card.Body className="p-1" style={{height: '280px'}}>
         <Chart
           options={data.options}
           series={data.series}
