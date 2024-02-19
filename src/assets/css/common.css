@@ -1,0 +1,15 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overscroll-behavior-y: none;
+}
+
+.full-height {
+  height: calc(100% - 50px);
+}
+
+.test {
+  padding: 20px 0 calc(env(safe-area-inset-bottom) + 15px);
+}

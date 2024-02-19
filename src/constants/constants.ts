@@ -1,0 +1,1 @@
+export const PRODUCT_NAME = '아무개 시스템';
