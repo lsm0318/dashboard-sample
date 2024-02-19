@@ -10,7 +10,7 @@ interface CardLabelsProps {
 export interface CardLabel {
   name: string;
   value: number;
-  color: CSSProperties;
+  color?: CSSProperties;
 }
 
 const CardLabels: React.FunctionComponent<CardLabelsProps> = ({

@@ -32,15 +32,15 @@ const Dashboard = () => {
       <Row className="mb-4 g-3">
         <Col md={12} lg={4}>
           <CardLabels title={'TOP LABELS (3 LAST MONTHS)'} data={[
-            {name: 'Malware', value: 10880, color: {backgroundColor: '#cc19e0'}},
-            {name: 'geopolitical...', value: 5200, color: {backgroundColor: '#6b4ec5'}},
-            {name: 'apt', value: 4880, color: {backgroundColor: '#198754'}},
-            {name: 'android', value: 3910, color: {backgroundColor: 'rgba(110,75,180,0.63)'}},
-            {name: 'Vulnerability', value: 3610, color: {backgroundColor: '#e85018'}},
-            {name: 'mobile security', value: 3610, color: {backgroundColor: '#d898ff'}},
-            {name: 'scamware', value: 3610, color: {backgroundColor: '#3d63ff'}},
-            {name: 'dark herring', value: 3020, color: {backgroundColor: '#5e4c15'}},
-            {name: 'botnet', value: 3000, color: {backgroundColor: '#3d3a3d'}},
+            {name: 'Malware', value: 10880},
+            {name: 'geopolitical...', value: 5200},
+            {name: 'apt', value: 4880},
+            {name: 'android', value: 3910},
+            {name: 'Vulnerability', value: 3610},
+            {name: 'mobile security', value: 3610},
+            {name: 'scamware', value: 3610},
+            {name: 'dark herring', value: 3020},
+            {name: 'botnet', value: 3000},
           ]}/>
         </Col>
         <Col md={12} lg={8}>
