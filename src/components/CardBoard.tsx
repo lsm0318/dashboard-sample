@@ -1,4 +1,4 @@
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Row, Table } from "react-bootstrap";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -20,29 +20,32 @@ const CardBoard: React.FunctionComponent<CardBoardProps> = ({
   return (
     <Card>
       <Card.Header><small>{title}</small></Card.Header>
-      <Card.Body style={{height: '280px'}}>
-        <div className="d-flex flex-column gap-3">
+      <Card.Body className="p-0" style={{height: '280px', overflowY: 'auto'}}>
+
+        <Table className="p-0 m-0" responsive>
+          <tbody>
           {posts.map((post, i) =>
-            <Row key={i}>
-              <Col sm="auto">
+            <tr key={i}>
+              <td className="align-middle text-center text-nowrap">
                 {post.type === 'Opinion' ? <i className="fa-solid fa-circle-exclamation fa-fw"></i> : null}
                 {post.type === 'Report' ? <i className="fa-solid fa-file fa-fw"></i> : null}
-              </Col>
-              <Col sm={2}>
+              </td>
+              <td className="align-middle text-center text-nowrap">
                 <span>{post.type}</span>
-              </Col>
-              <Col sm className="text-truncate">
+              </td>
+              <td className="align-middle text-start">
                 <Link to="#" className="text-decoration-none text-reset">{post.subject}</Link>
-              </Col>
-              <Col sm={2} className="text-truncate">
+              </td>
+              <td className="align-middle text-start text-nowrap">
                 {post.author}
-              </Col>
-              <Col sm="auto">
+              </td>
+              <td className="align-middle text-center text-nowrap">
                 {post.date.toDateString()}
-              </Col>
-            </Row>
+              </td>
+            </tr>
           )}
-        </div>
+          </tbody>
+        </Table>
       </Card.Body>
     </Card>
   );
