@@ -12,25 +12,25 @@ const Dashboard = () => {
   return (
     <>
       <Row className="mb-4 g-3">
-        <Col md={6} xl={3}>
+        <Col lg={6} xxl={3}>
           <CardCounter title={'TOTAL ENTITIES'} value={115600} changed={131}
                        icon={<i className="fa-solid fa-database fa-fw"></i>}/>
         </Col>
-        <Col md={6} xl={3}>
+        <Col lg={6} xxl={3}>
           <CardCounter title={'TOTAL RELATIONSHIPS'} value={796300} changed={417}
                        icon={<i className="fa-solid fa-code-fork fa-fw"></i>}/>
         </Col>
-        <Col md={6} xl={3}>
+        <Col lg={6} xxl={3}>
           <CardCounter title={'TOTAL REPORTS'} value={9200} changed={3}
                        icon={<i className="fa-regular fa-file-lines fa-fw"></i>}/>
         </Col>
-        <Col md={6} xl={3}>
+        <Col lg={6} xxl={3}>
           <CardCounter title={'TOTAL OBSERVABLES'} value={470750} changed={43}
                        icon={<i className="fa-solid fa-layer-group fa-fw"></i>}/>
         </Col>
       </Row>
       <Row className="mb-4 g-3">
-        <Col md={12} lg={4}>
+        <Col md={12} lg={5} xxl={4}>
           <CardLabels title={'TOP LABELS (3 LAST MONTHS)'} data={[
             {name: 'Malware', value: 10880},
             {name: 'geopolitical...', value: 5200},
@@ -43,7 +43,7 @@ const Dashboard = () => {
             {name: 'botnet', value: 3000},
           ]}/>
         </Col>
-        <Col md={12} lg={8}>
+        <Col md={12} lg={7} xxl={8}>
           <CardChartArea/>
         </Col>
       </Row>
